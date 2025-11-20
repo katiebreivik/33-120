@@ -1,0 +1,269 @@
+% !TeX encoding = UTF-8 !TeX spellcheck = en_US
+\documentclass[11pt, a4paper]{article}
+
+% The title of the current document to be produced.
+\newcommand{\doctitle}{Course Outline}
+\newcommand{\assignments}{\bluetext{\textbf{Assignment:}}}
+%
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+\setlength{\columnsep}{2cm}
+
+\usepackage[sfdefault]{atkinson}
+\usepackage[T1]{fontenc}
+
+
+%------------------------------------------------------------
+% Import commands for both teacher and course information.  | NOTE: Change your
+% teacher and course info in these files. |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/teacher-info}                              %|
+\input{includes/course-info}                               %|   
+%
+%------------------------------------------------------------
+%-- Import packages and custom command definitons.          |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/packages-imports}                          %|  
+\input{includes/custom-commands}   
+%
+%---> Genereate & inject metadata                           |
+\input{includes/hyperef.doc.info}                          %|
+%------------------------------------------------------------
+
+\topmargin -70pt
+\begin{document} 
+
+\normalfont
+
+%-------------------------------------------------------------
+%-- Make the header of the document                          |
+%------>------>------>------>------>------>------>------>--> |
+\input{includes/document-header}
+  
+%-------------------------------------------------------------
+%-- Insert the course & teacher info                         |
+%------>------>------>------>------>------>------>------>--> |
+\hrule     
+\vspace{.5cm}
+
+\begin{multicols}{2}
+    \begin{description}[labelindent=0.00in,leftmargin=1.25in,rightmargin=0.0in,style=nextline]
+        %--> First column:         
+		\item[\textsc{Instructor}:] \instructor
+        \item[\textsc{E-mail}:] \email
+        \item[] 
+        \item[\textsc{Class Time}:] Mon/Wed/Fri\newline   11-11:50am 
+        \item[] 
+        %--> Second column:         
+        \item[\textsc{Office}:]  \office
+        \item[\textsc{Office Hours}:] \hours
+        \item[] 
+        \item[\textsc{Class Room}:] DH A302
+        \item[] 
+    \end{description}
+\end{multicols}
+\hrule        
+\vspace{.2cm}
+
+ %--------  Course Description  ------------------------------
+\customsection{Course Description from Course Catalog}  
+\noindent We will view and critique the science content in a selection of
+science fiction films, spanning more than 100 years of cinematic history, and
+from sci-fi TV shows from the past 50+ years. Guided by selected readings from
+current scientific literature, and aided by order-of-magnitude estimates and
+careful calculations, we will ponder whether the films are showing things which
+may fall into one of the following categories: Science fiction at the time of
+production, but currently possible, due to recent breakthroughs. Possible, in
+principle, but beyond our current technology. Impossible by any science we know.
+Topics to be covered include the future of the technological society, the
+physics of Star Trek, the nature of space and time, extraterrestrial
+intelligence, robotics and artificial intelligence, biotechnology and more.
+Success of this course will depend upon class participation. Students will be
+expected to contribute to discussion of assigned readings and problems.
+
+\customsection{Student Learning Outcomes} 
+\noindent At the end of the class, students should be able to
+\begin{borderedsquare}
+     \setlength\itemsep{0.3em}        
+	\item develop and maintain an interest in science.
+	\item become familiar with the history of science fiction film by watching
+    numerous short clips and full-length movies.
+    \item develop critical thinking skills and to discern the difference between
+    currently plausible scenarios, future possibilities, and total fantasy.
+    \item use science fiction film as a springboard for discussing current
+    scientific research.
+    \item use library and/or online resources and to discern and summarize the
+    key ideas in short scientific articles.
+    \item work cooperatively in teams to solve challenging, but doable problems.
+\end{borderedsquare}
+
+\customsection{Textbooks and Course Materials}  
+%---------------------------------
+%--> List of recommended textbooks. 
+\begin{itemize}[itemsep=4pt,parsep=0pt,topsep=1pt,partopsep=1pt]
+	\item[\color{darkblue}\faNewspaperO]\textbf{Canvas:} The site can be reached
+	from \href{http://www.cmu.edu/canvas/}{http://www.cmu.edu/canvas/} The
+	course website will contain the syllabus, homework, project assignments and
+	all required reading. Announcements and visual material presented during
+	lectures will also be posted throughout the semester.\\
+
+	\item[\color{darkblue}\faBook] \textbf{\textsc{Textbooks:}} Exploring
+    Science Through Science Fiction, \textbf{Second Edition}, Author: Barry B.
+    Loukkala, available on
+    \href{https://www.amazon.com/Exploring-Science-Through-Fiction-dp-3030293920/dp/3030293920/ref=dp_ob_title_bk}{Amazon}
+\end{itemize}
+
+\customsection{Prerequisite Knowledge: No prequisite knowledge assumed}
+
+\customsection{Evaluation Procedures}    
+\label{sec:eval-procudures}
+\noindent The course will consist of in-class lectures and a variety of
+assignments, team projects, and quizzes as detailed below. There will be a final
+cumulative exam to be taken online on Canvas during finals week. 
+
+\begin{itemize}[itemsep=8pt,parsep=0pt,topsep=3pt,partopsep=4pt]
+    \item[]
+%    \begin{center}
+        \renewcommand{\arraystretch}{1.5} % this reduces the vertical spacing
+        %between rows    
+        \begin{tabular}{lll}
+            \thead{\color{darkblue} Course Component} & \thead{\color{darkblue}
+            Breakdown}& \thead{\color{darkblue} Total Points} \\ 
+            %---s Load the table body: dynamic table content.        
+       \hline    
+            \textbf{Science Knowledge Survey} & 1 on 1st day of class & 25 pts
+            \\                         
+        \hline    
+	        \textbf{In-Class Discussion} & Every class period & 50 pts \\                         
+        \hline    
+	        \textbf{Sci-fi Problem Sets} & 4 at 25 pts each & 100 pts \\                         
+        \hline    
+	        \textbf{Exploration Papers} & 5 at 25 pts each & 125 pts \\                         
+        \hline    
+	        \textbf{Quizzes on Lectures/Reading} & 7 w/ variable pts & 350 pts
+	        \\                         
+        \hline
+            \textbf{Team Projects} & 2 at 25 pts each & 50 pts \\                         
+        \hline
+            \textbf{Film Critiques} & 2 at 50 pts each & 100 pts \\                         
+        \hline
+            \textbf{Final Exam} &  & 200 pts \\                         
+        \hline
+        \hline
+            \textbf{Total Points} & & 1000 pts\\
+        
+
+
+
+        \end{tabular}
+%    \end{center} 
+    %        \evaluationrules
+\end{itemize} 
+
+\noindent Final grade boundaries are: A: 900 - 1000, B: 800 - 899, C: 700 - 799
+pts D: 600 - 699, R: <600 
+
+\noindent Boundary cases may be discussed based on demonstrated engagment,
+effort, and improvement over the semester. 
+
+\vspace{.4cm}
+
+\customsection{Attendance and Late Work Policies}  
+\noindent 
+Formal attendance will not be recorded for the course. However, to gain
+discussion points for the course, you must be present in class. Class time will
+also serve as a venue to communicate important details on course component, so
+in-class participation is likely to correlate strongly with final grade
+outcomes.
+
+Late homeworks may be submitted for reduced credit at 2 pts per day up to the
+point that grading is complete. Assignments are allowed \emph{one submission
+only} and there are \emph{\textbf{no makeup quizzes.}} The dates of each quiz
+are listed in the course calendar and will be announced both in class and on
+canvas. There will be \emph{several} opportunities for extra credit announced
+during class that can be used to make up points lost for a missed quiz. 
+
+\vspace{.4cm}
+
+\customsection{Accommodations for Students with Disabilities}
+\noindent
+If you have an accommodations letter from the Disability Resources office, you
+are encouraged to discuss your accommodations and needs with me as early in the
+semester as possible. I will work with you to ensure that accommodations are
+provided as appropriate. If you suspect that you may benefit from accommodations
+but are not yet registered with the Office of Disability Resources, I encourage
+you to contact them at access@andrew.cmu.edu.
+\vspace{.4cm}
+
+
+\customsection{Statement on Diversity, Equity, and Inclusion}  
+\noindent 
+Everyone in this course must be treated with respect. Science is a human
+endeavour and we are all accountable for ensuring that the environment we create
+is welcoming and free from discrimination. Each of us is here for a variety of
+reasons, comes from a variety of backgrounds, and have a diversity of skills and
+past experiences. It is expected that the students and instructor will
+contribute to a collaborative learning environment where diverse perspectives
+and approaches are celebrated.
+
+Unfortunately, incidents may occur, whether intentional or not, that can create
+an unwelcoming environment for one or more class members. The university
+encourages anyone who experiences or observes unfair or hostile treatment on the
+basis of identity to speak out for justice and support, within the moment of the
+incident or after the incident has passed. Anyone can share these experiences
+using the following resources:
+\begin{itemize}
+    \item Center for Student Diversity and Inclusion: csdi@andrew.cmu.edu, (412)
+268-2150 
+    \item Report-It online anonymous reporting platform: reportit.net username:
+tartans password: plaid 
+\end{itemize}
+\noindent All reports will be documented and deliberated to determine if there
+should be any following actions. Regardless of incident type, the university
+will use all shared experiences to transform our campus climate to be more
+equitable and just.
+
+\vspace{.4cm}
+
+\customsection{Communication Expectations} 
+\noindent The majority of our communication will be done during class time but I
+am also reachable by email at the address listed at the top of this page. I will
+also hold a weekly office hour on Tuesdays at 2pm. I can also meet outside of
+those hours, but these meetings will need to scheduled by email. 
+\vspace{.4cm}
+
+\customsection{Use of Film/TV Clips Under Fair Use} 
+\noindent We will view several clips taken from television and film in class for
+illustrative and critical purposes in support of the aims of the course. They
+will only be shown during class and not available for personal use such that all 
+clips remain under fair use.   
+\vspace{.4cm}
+
+\customsection{Student Wellness}
+\noindent Take care of yourself. Do your best to maintain a healthy lifestyle
+this semester by eating well, exercising, getting enough sleep and taking some
+time to relax. This will help you achieve your goals and cope with stress. 
+
+All of us benefit from support during times of struggle. You are not alone.
+There are many helpful resources available on campus and an important part of
+the college experience is learning how to ask for help. Asking for support
+sooner rather than later is often helpful. If you or anyone you know experiences
+any academic stress, difficult life events, or feelings like anxiety or
+depression, we strongly encourage you to seek support including from the
+\href{https://www.cmu.edu/wellbeing/resources/timely-care.html}{Timely Care
+App}. Counseling and Psychological Services (CaPS) is alsoå here to help: call
+412-268-2922 and visit their \href{http://www.cmu.edu/counseling/}{website}.
+
+Consider reaching out to a friend, faculty or family member you trust for help
+getting connected to the support that can help. If you or someone you know is
+feeling suicidal or in danger of self-harm, call someone immediately, day or
+night: CaPS: 412-268-2922 Re:solve Crisis Network: 888-796-8226
+
+The \href{https://www.cmu.edu/student-affairs/resources/cmu-pantry/}{CMU Pantry}
+is committed to reducing hunger among students by providing nutritious food at
+no cost. Accessing these food resources can promote a healthier, balanced
+university experience.
+
+\clearpage
+
+\end{document} 
