@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{33-120 Science and Science Fiction}
+\lhead{Sci-Fi Problem 4 (25 points)}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+\vspace{1cm}
+\noindent \textbf{Film reference}: \textit{Mission to Mars} (Brian De Palma,
+Touchstone Pictures 2000)
+
+\vspace{0.2cm}
+\noindent \textbf{Concept:} The time required for air to escape from a spaceship
+depends on many factors, including the size of the hole through which the air
+will escape and the volume of the spaceship.
+
+\vspace{0.2cm}
+\noindent \textbf{Web references for the International Space Station:}
+\begin{itemize}
+    \item \href{https://www.theguardian.com/science/2018/sep/05/space-station-air-leak-someone-drilled-the-hole-say-russians}{Article from The Gaurdian about the discovery and repair of the air leak}
+    \item\href{https://blogs.nasa.gov/spacestation/2018/08/}{NASA.gov news about the ISS for August 2018}
+    \item \href{https://www.nasa.gov/international-space-station/space-station-facts-and-figures/}{Facts and Figures for the ISS}
+\end{itemize}
+
+\noindent In Section 3.4.1 of the text (\textit{Exploring Science Through Science Fiction, 2nd Ed.}), the reader is guided through the steps of a calculation of the time required for air to leak out of a large, interplanetary spaceship through a hole roughly the diameter of a finger. The scenario is portrayed in the 2000 movie \textit{Mission to Mars}. The result of the calculation turns out to be many hours, not just a few minutes, as the movie suggests.
+\vspace{0.2cm}
+
+\noindent On August 30, 2018, an air leak was detected aboard the International Space Station (ISS). The leak was traced to a small drill hole in a Soyuz space capsule, docked with the ISS.
+
+\vspace{0.5cm}
+\noindent \textbf{Problem:}
+
+\noindent Use the example calculation worked out in the text to come up with an estimate of the time required for half the air to leak out of the International Space Station through the hole shown in the photograph in the Guardian article (reference above).
+
+\begin{enumerate}
+    \item[a.] Go to the official NASA website for Facts and Figures for the International Space Station and find the ``total pressurized volume'', $V$, of the ISS. Express the value in cubic meters.
+    
+    \item[b.] Consult the recommended web articles (the Guardian and the official NASA news) to find an estimate of the diameter of the hole that caused the air leak. (Note: The diameter will probably be given in units of millimeters. Be sure to convert this to meters. Calculate the area of the hole, $A$, in units of square meters.)
+    
+    \item[c.] Using the example calculation in the text (and shown in class) estimate the time required for half of the air to leak out of the ISS.
+\end{enumerate}
+
+\newpage
+\vspace{0.5cm}
+\noindent \textbf{Rubric:}
+
+\noindent Use the example calculation worked out in the text to come up with an estimate of the time required for half the air to leak out of the International Space Station through the hole shown in the photograph in the Guardian article (reference above).
+
+\begin{enumerate}
+    \item[a.] Go to the official NASA website for Facts and Figures for the International Space Station and find the ``total pressurized volume'', $V$, of the ISS. Express the value in cubic meters.
+    \begin{itemize}
+        \item (4 pts): The total pressurized volume is 35,491 cubic feet which converts to 1005 cubic meters
+        \item -1 pt for incorrect conversion
+        \item -1 pt for incorrect number
+    \end{itemize}
+    \item[b.] Consult the recommended web articles (the Guardian and the
+    official NASA news) to find an estimate of the diameter of the hole that
+    caused the air leak. (Note: The diameter will probably be given in units of
+    millimeters. Be sure to convert this to meters. Calculate the area of the
+    hole, $A$, in units of square meters.)
+    \begin{itemize}
+        \item (6 pts): A hole that is 2 millimeters in diameter was found; it's area in square meters is $3.142\times10^{-6}$ square meters.
+        \item -1 pt for incorrect number
+        \item -1 pt for incorrect version
+        \item -1 pts for incorrect area calculation
+    \end{itemize}
+    \item[c.] Using the example calculation in the text (and shown in class) estimate the time required for half of the air to leak out of the ISS.
+    \begin{itemize}
+        \item (10 pts): Use the equation $\Delta t = \frac{\Delta n}{n}
+        \frac{6V}{A}\sqrt{\frac{m}{3k_{\rm{B}}T}}$, where $\Delta n/n = 1/2$, $V
+        = 1005\,\rm{m}^3$, $A = 3.142\times10^{-6}\,\rm{m}^2$, $T=300\,\rm{K}$,
+        $k_{\rm{B}} =1.38\times10^{-23}\,\rm{m^2\,kg\,s^{-2}\,K^{-1}}$. \newline\newline The mass
+        per particle should be calculated for something close to N2 such
+        that $m_{\rm{N2}}=2\times14\times1.66054\times10^{-27}\,\rm{kg} = 4.65\times10^{-26}\,\rm{kg}$. 
+        \newline\newline The answer should then be close to $\Delta t_{\rm{N}} = 1.86\times10^6\,\rm{s} = 21.53\,\rm{days}$
+        \item -2 pts for incorrect formula application
+        \item -1 pt each for incorrect numbers for each variable (up to 3 pts)
+        \item -1 pt for incorrect answer
+    \end{itemize}
+\end{enumerate}
+
+
+\end{document}
